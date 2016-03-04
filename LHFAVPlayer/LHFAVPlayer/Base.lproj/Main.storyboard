@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是 AVPlayer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uT-P7-FQe">
+                                <rect key="frame" x="159" y="129" width="281" height="58"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Cvw-lq-7BK">
+                                <rect key="frame" x="137" y="249" width="327" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9f-9X-JRl">
+                                <rect key="frame" x="147" y="328" width="30" height="30"/>
+                                <state key="normal" title="播放"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7Y-Kn-MK1">
+                                <rect key="frame" x="402" y="328" width="30" height="30"/>
+                                <state key="normal" title="暂停"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1uT-P7-FQe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="2y8-10-bC1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1uT-P7-FQe" secondAttribute="trailing" constant="140" id="5Nx-yG-wBe"/>
+                            <constraint firstItem="e9f-9X-JRl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="127" id="5vi-ws-dcH"/>
+                            <constraint firstItem="Cvw-lq-7BK" firstAttribute="top" secondItem="1uT-P7-FQe" secondAttribute="bottom" constant="62" id="CfN-g7-61R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cvw-lq-7BK" secondAttribute="trailing" constant="118" id="Hfw-CT-kUG"/>
+                            <constraint firstItem="e9f-9X-JRl" firstAttribute="top" secondItem="Cvw-lq-7BK" secondAttribute="bottom" constant="49" id="SJP-RY-Npo"/>
+                            <constraint firstItem="c7Y-Kn-MK1" firstAttribute="leading" secondItem="e9f-9X-JRl" secondAttribute="trailing" constant="225" id="Ua2-cH-WXu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1uT-P7-FQe" secondAttribute="bottom" constant="413" id="W3A-RM-0a2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e9f-9X-JRl" secondAttribute="bottom" constant="242" id="aFi-kl-HGa"/>
+                            <constraint firstItem="1uT-P7-FQe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="109" id="gNE-2j-iEi"/>
+                            <constraint firstItem="c7Y-Kn-MK1" firstAttribute="leading" secondItem="e9f-9X-JRl" secondAttribute="trailing" constant="225" id="gka-Gh-7lu"/>
+                            <constraint firstItem="c7Y-Kn-MK1" firstAttribute="top" secondItem="Cvw-lq-7BK" secondAttribute="bottom" constant="49" id="nh2-vM-3RC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cvw-lq-7BK" secondAttribute="bottom" constant="321" id="sr0-Ty-MiN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c7Y-Kn-MK1" secondAttribute="trailing" constant="148" id="uiw-KE-j27"/>
+                            <constraint firstItem="Cvw-lq-7BK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="119" id="vba-k6-qkX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c7Y-Kn-MK1" secondAttribute="bottom" constant="242" id="x6J-L7-1Va"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+    </scenes>
+</document>
